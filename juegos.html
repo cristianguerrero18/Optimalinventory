@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juegos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #004080;
+            font-weight: bold;
+        }
+        h3 {
+            font-size: 1.75rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .game-container {
+            margin-top: 30px;
+        }
+        iframe {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: none;
+        }
+        .app-inventor-image {
+            cursor: pointer;
+            width: 485px;
+            height: 402px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .game-section {
+            text-align: center;
+        }
+        .game-section a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .game-section a:hover img {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
+        .row {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        .col-md-6 {
+            max-width: 520px;
+        }
+        .back-button {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #004080;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            font-size: 1rem;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .back-button:hover {
+            background-color: #003366;
+        }
+        .back-button i {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Sección de Juegos</h1>
+
+        <!-- Row para los juegos -->
+        <div class="row justify-content-center">
+            <!-- Juego Scratch -->
+            <div class="col-md-6 game-section">
+                <h3>Juego de Scratch</h3>
+                <iframe src="https://scratch.mit.edu/projects/1097137887/embed" 
+                        allowtransparency="true" 
+                        width="485" 
+                        height="402" 
+                        frameborder="0" 
+                        scrolling="no" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+            
+            <!-- Juego App Inventor -->
+            <div class="col-md-6 game-section">
+                <h3>Juego de App Inventor</h3>
+                <a href="https://ai2.appinventor.mit.edu/?locale=es_ES#5359796188413952" target="_blank">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/11/2f/81/112f81c7-5227-9209-7887-3944e26e43de/AppIcon-0-1x_U007emarketing-0-7-0-0-sRGB-85-220-0.png/1200x630wa.png" 
+                         alt="App Inventor Game" class="app-inventor-image"
+                    >
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botón Volver -->
+    <a href="index.html" class="back-button">
+        <i class="fas fa-arrow-left"></i> Volver
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
